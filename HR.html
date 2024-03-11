@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humnan Resources</title>
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Human Resources
+    </h1>
+</header>
+<fieldset> <legend>Dodaj pracownika</legend>
+<form action="dodawanie.php">
+    <label>Podaj imię i nazwisko: <input type="text" id="name"></label>
+<label>Podaj wiek pracownika: <input type="number" id="age"></label>
+<label>Podaj typ uprawnień: <input type="text" id="status"></label>
+<label>Podaj date urodzenia: <input type="date" id="birthday"></label>
+    <label>Podaj oddział: <input type="number" id="department"></label>
+    <input type="submit" name="submit" id="submit">
+</form></fieldset>
+
+</body>
+</html>
