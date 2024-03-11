@@ -11,9 +11,10 @@
         $filename = "clients.csv";
         $clients = fopen($filename, "r");
         while($data = fgetcsv($clients)){
-            echo "<li>UID: " . $data[0] . ", Nazwa: " . $data[1] . ", e-mail: " . $data[2] . "Subskrypcja: " . $data[3] . "</li>";
+            echo "<li>UID: " . $data[0] . ", Nazwa: " . $data[1] . ", e-mail: " . $data[2] . ", Subskrypcja: " . $data[3] . "</li>";
         }
         ?>
     </ol>
+    <a href="http://localhost">Powrót</a>
 </body>
 </html>
