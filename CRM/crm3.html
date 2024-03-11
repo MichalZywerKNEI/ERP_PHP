@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaktualizuj dane klienta</title>
+</head>
+<body>
+    <form action="crm3.php">
+        <label for="targetID">Podaj ID klienta którego dane chcesz zmienić:</label>
+        <input type="text" name="targetID" id="targetID">
+        <br>
+        <fieldset>
+            <legend>Nowe dane</legend>
+            <label for="newName">Imię:</label>
+            <input type="text" name="newName" id="newName">
+            <br>
+            <label for="newMail">E-mail:</label>
+            <input type="email" name="newMail" id="newMail">
+            <br>
+            <label for="newSub">Model subskrypcji:</label>
+            <select name="newSub" id="newSub">
+                <option value="none">None</option>
+                <option value="standard">Standard</option>
+                <option value="pro">Pro</option>
+                <option value="enterprise">Enterprise</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Aktualizuj">
+    </form>
+    <a href="../index.html">Powrót</a>
+</body>
+</html>
