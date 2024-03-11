@@ -11,5 +11,5 @@ $client_data = [
 fputcsv($clients, $client_data);
 echo "Dodano nowego klienta " . $_REQUEST["clientName"] . " o ID $new_id";
 fclose($clients);
-echo '<a href="../index.html">Powrót</a>';
+echo '<br><a href="../index.html">Powrót</a>';
 ?>
