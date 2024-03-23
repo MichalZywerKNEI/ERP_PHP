@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dodaj transakcję</title>
+</head>
+<body>
+	<form action="create.php">
+		<label for="clientID">ID klienta:</label>
+		<input type="text" name="clientID" id="clientID">
+		<br>
+		<label for="product">Produkt:</label>
+		<input type="text" name="product" id="product">
+		<br>
+		<label for="profit">Dochód:</label>
+		<input type="number" name="profit" id="profit" step="0.01" min="0.01">
+		<br>
+		<input type="submit" value="Dodaj transakcję">
+	</form>
+	<a href="../CRUD.html">Powrót</a>
+</body>
+</html>
