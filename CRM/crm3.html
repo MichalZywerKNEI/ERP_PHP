@@ -6,24 +6,25 @@
     <title>Zaktualizuj dane klienta</title>
 </head>
 <body>
-    <form action="crm3.php">
-        <label for="targetID">Podaj ID klienta którego dane chcesz zmienić:</label>
-        <input type="text" name="targetID" id="targetID">
+    <form action="crm_controller.php" method="post">
+        <input type="hidden" name="crm" value="crm3">
+        <label for="client_id">Podaj ID klienta którego dane chcesz zmienić:</label>
+        <input type="number" name="client_id" id="client_id" step="1">
         <br>
         <fieldset>
             <legend>Nowe dane</legend>
-            <label for="newName">Imię:</label>
-            <input type="text" name="newName" id="newName">
+            <label for="client_name">Imię:</label>
+            <input type="text" name="client_name" id="client_name">
             <br>
-            <label for="newMail">E-mail:</label>
-            <input type="email" name="newMail" id="newMail">
+            <label for="client_email">E-mail:</label>
+            <input type="email" name="client_email" id="client_email">
             <br>
-            <label for="newSub">Model subskrypcji:</label>
-            <select name="newSub" id="newSub">
-                <option value="none">None</option>
-                <option value="standard">Standard</option>
-                <option value="pro">Pro</option>
-                <option value="enterprise">Enterprise</option>
+            <label for="client_subscription">Model subskrypcji:</label>
+            <select name="client_subscription" id="client_subscription">
+                <option value="Brak">Brak</option>
+                <option value="Standard">Standard</option>
+                <option value="Pro">Pro</option>
+                <option value="Enterprise">Enterprise</option>
             </select>
         </fieldset>
         <input type="submit" value="Aktualizuj">

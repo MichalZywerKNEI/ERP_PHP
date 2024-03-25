@@ -6,19 +6,20 @@
     <title>ERP - CRM #1: Dodaj klienta</title>
 </head>
 <body>
-    <form action="crm1.php">
-        <label for="clientName">Imię:</label>
-        <input type="text" name="clientName" id="clientName">
+    <form action="crm_controller.php" method="post">
+        <input type="hidden" name="crm" value="crm1">
+        <label for="client_name">Imię:</label>
+        <input type="text" name="client_name" id="client_name">
         <br>
-        <label for="clientMail">Adres e-mail:</label>
-        <input type="email" name="clientMail" id="clientMail">
+        <label for="client_email">Adres e-mail:</label>
+        <input type="email" name="client_email" id="client_email">
         <br>
-        <label for="clientSub">Model subskrybcji:</label>
-        <select name="clientSub" id="clientSub">
-            <option value="none">None</option>
-            <option value="standard">Standard</option>
-            <option value="pro">Pro</option>
-            <option value="enterprise">Enterprise</option>
+        <label for="client_subscription">Model subskrybcji:</label>
+        <select name="client_subscription" id="client_subscription">
+            <option value="Brak">Brak</option>
+            <option value="Standard">Standard</option>
+            <option value="Pro">Pro</option>
+            <option value="Enterprise">Enterprise</option>
         </select>
         <br>
         <input type="submit" value="Dodaj klienta">

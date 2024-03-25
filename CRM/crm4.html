@@ -6,9 +6,10 @@
     <title>Usuń klienta</title>
 </head>
 <body>
-    <form action="crm4.php">
-        <label for="targetID">ID użytkownika do usunięcia:</label>
-        <input type="text" name="targetID" id="targetID">
+    <form action="crm_controller.php" method="post">
+        <input type="hidden" name="crm" value="crm4">
+        <label for="client_id">ID użytkownika do usunięcia:</label>
+        <input type="text" name="client_id" id="client_id">
         <br>
         <input type="submit" value="Usuń">
     </form>
