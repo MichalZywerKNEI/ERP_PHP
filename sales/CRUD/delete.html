@@ -6,9 +6,10 @@
     <title>Usuń transakcję</title>
 </head>
 <body>
-    <form action="delete.php">
-        <label for="targetID">ID transakcji do usunięcia:</label>
-        <input type="text" name="targetID" id="targetID">
+    <form action="crud_controller.php" method="post">
+        <input type="hidden" name="crud" value="delete">
+        <label for="transaction_id">ID transakcji do usunięcia:</label>
+        <input type="number" name="transaction_id" id="transaction_id" step="1">
         <br>
         <input type="submit" value="Usuń">
     </form>

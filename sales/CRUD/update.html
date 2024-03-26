@@ -6,20 +6,21 @@
     <title>Zaktualizuj dane transakcji</title>
 </head>
 <body>
-    <form action="update.php">
-        <label for="targetID">Podaj ID transakcji której dane chcesz zmienić:</label>
-        <input type="text" name="targetID" id="targetID">
+    <form action="crud_controller.php" method="post">
+        <input type="hidden" name="crud" value="update">
+        <label for="transaction_id">Podaj ID transakcji której dane chcesz zmienić:</label>
+        <input type="text" name="transaction_id" id="transaction_id">
         <br>
         <fieldset>
             <legend>Nowe dane</legend>
-            <label for="newClientID">ID klienta:</label>
-            <input type="text" name="newClientID" id="newClientID">
+            <label for="client_id">ID klienta:</label>
+            <input type="number" name="client_id" id="client_id" step="1">
             <br>
-            <label for="newProduct">Produkt:</label>
-            <input type="text" name="newProduct" id="newProduct">
+            <label for="product">Produkt:</label>
+            <input type="text" name="product" id="product">
             <br>
-            <label for="newProfit">Dochód:</label>
-            <input type="number" name="newProfit" id="newProfit" step="0.01" min="0.01">
+            <label for="profit">Dochód:</label>
+            <input type="number" name="profit" id="profit" step="0.01" min="0.01">
         </fieldset>
         <input type="submit" value="Aktualizuj">
     </form>
